@@ -12,11 +12,13 @@
 
 <script lang="ts" setup>
 import { usePostsStore } from '@/stores/posts'
-import { computed } from 'vue'
+import { computed, onMounted } from 'vue'
 
 const postsStore = usePostsStore()
 
-postsStore.getPosts()
+onMounted(() => {
+  postsStore.getPosts()
+})
 
 const showPosts = computed(() => !!postsStore.posts)
 </script>

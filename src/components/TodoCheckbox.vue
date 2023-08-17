@@ -68,7 +68,6 @@ defineEmits(['update:modelValue'])
   left: 0;
   height: 20px;
   width: 20px;
-  //   background-color: #eee;
   border: solid 3px grey;
 
   /* Create the checkmark/indicator (hidden when not checked) */
