@@ -1,11 +1,11 @@
 {
-  "name": "vue3-boilerplate",
+  "name": "test-anwalt",
   "version": "1.0.0",
   "private": true,
   "scripts": {
     "dev": "node service/commands/dev.js",
     "build": "node service/commands/build.js",
-    "lint": "yarn lint:js && yarn lint:style",
+    "lint": "npm run lint:js && npm run lint:style",
     "lint:js": "eslint --ext .ts,.js,.vue src --fix",
     "lint:style": "stylelint \"./src/**/*.vue\" \"./src/**/*.scss\" --fix",
     "test": "vitest --globals"
@@ -79,6 +79,5 @@
   },
   "engines": {
     "node": ">=14.15.0"
-  },
-  "packageManager": "yarn@3.2.1"
+  }
 }
