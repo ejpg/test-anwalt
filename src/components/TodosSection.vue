@@ -1,5 +1,4 @@
 <template>
-  {{ showTodos }}
   <div v-if="showTodos" class="todos">
     <h3 class="todos__title">My Todo's</h3>
     <div class="todos__wrapper">

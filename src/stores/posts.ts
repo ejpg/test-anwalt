@@ -9,7 +9,6 @@ export const usePostsStore = defineStore('posts', () => {
   const posts = ref<AxiosResponse<Post[]>>()
 
   const getPosts = () => {
-    console.log('GET POSTS')
     return axios
       .get(`${API_URL}/posts`)
       .then((response) => {
